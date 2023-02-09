@@ -15,7 +15,7 @@ class Circle:public Shape{
     int radius; 
   public:
     Circle(int radius = 0){
-      this->radius = 0; // this指向物件，而非類別。
+      this->radius = 0; // this指向(執行這個constructor函式的)物件，而非類別。
       setRadius(radius);
     }
     void setRadius(int r);
@@ -25,7 +25,12 @@ class Rectangle:public Shape{
     int height; 
     int width;
   public:
-    Rectangle(int height = 0, int width = 0):height(height), width(width) {}
+    Rectangle(int height = 0, int width = 0){
+      this->height = 0;
+      this->width = 0;
+      setHeight(height);
+      setWidth(width);
+    }
     void setHeight(int height);
     void setWidth(int width);
 };
