@@ -14,8 +14,7 @@ class Shape{
 class Circle:public Shape{
     int radius; 
   public:
-    Circle():radius(0) {}
-    Circle(int r):radius(r) {}
+    Circle(int r = 0):radius(r) {}
     void setRadius(int r);
 };
 
@@ -23,8 +22,7 @@ class Rectangle:public Shape{
     int height;
     int width;
   public:
-    Rectangle():height(0), width(0) {}
-    Rectangle(int h, int w):height(h), width(w) {}
+    Rectangle(int h = 0, int w = 0):height(h), width(w) {}
     void setHeight(int h);
     void setWidth(int w);
 };
