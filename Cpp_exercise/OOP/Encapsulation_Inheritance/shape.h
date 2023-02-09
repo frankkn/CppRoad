@@ -14,15 +14,18 @@ class Shape{
 class Circle:public Shape{
     int radius; 
   public:
-    Circle(int r = 0):radius(r) {}
+    Circle(int radius = 0){
+      this->radius = 0; // this指向物件，而非類別。
+      setRadius(radius);
+    }
     void setRadius(int r);
 };
 
 class Rectangle:public Shape{
-    int height;
+    int height; 
     int width;
   public:
-    Rectangle(int h = 0, int w = 0):height(h), width(w) {}
-    void setHeight(int h);
-    void setWidth(int w);
+    Rectangle(int height = 0, int width = 0):height(height), width(width) {}
+    void setHeight(int height);
+    void setWidth(int width);
 };

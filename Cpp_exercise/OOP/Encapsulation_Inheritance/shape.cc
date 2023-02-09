@@ -17,26 +17,26 @@ void Shape::setGirth(int g){
   girth = g;
 }
 
-void Circle::setRadius(int r){
-  if(r >= 0 && r <= 1000){
-    radius = r;
+void Circle::setRadius(int radius){
+  if(radius >= 0 && radius <= 1000){
+    this->radius = radius;
     // area = radius*radius*3.14;
     setArea(radius*radius*3.14);
   }
 }
 
-void Rectangle::setHeight(int h){
-  if(h >= 0 && h <= 1000){
-    height = h;
+void Rectangle::setHeight(int height){
+  if(height >= 0 && height <= 1000){
+    this->height = height;
     // area = height * width;
     setArea(height * width);
     setGirth((height+width)*2);
   }
 }
 
-void Rectangle::setWidth(int w){
-  if(w >= 0 && w <= 1000){
-    width = w;
+void Rectangle::setWidth(int width){
+  if(width >= 0 && width <= 1000){
+    this->width = width;
     // area = height * width;
     setArea(height * width);
     setGirth((height+width)*2);
