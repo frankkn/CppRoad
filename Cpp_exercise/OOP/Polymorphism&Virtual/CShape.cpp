@@ -1,4 +1,6 @@
+#include <iostream>
 #include "CShape.h"
+using namespace std;
 
 CShape::CShape() {
   girth = 0;
@@ -7,6 +9,11 @@ CShape::CShape() {
 
 CShape::~CShape() {
 
+}
+
+void CShape::showInfo() {
+  cout << "CShape's area : " << getArea() << endl;
+  cout << "CShape's girth : " << getGirth() << endl;
 }
 
 double CShape::getArea() const {

@@ -14,12 +14,11 @@
     int getRadius() const;
     void setRadius(int radius);
 
-    double getArea(){
-      return 1234;
-    }
-    double getGirth(){
-      return 5678;
-    }
+    // double getArea() { return 1234; }
+    // double getGirth() { return 5678; }
+
+    virtual void showInfo() override;
+
 };
 
 #endif

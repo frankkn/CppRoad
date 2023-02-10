@@ -59,14 +59,15 @@ int main() {
   c.setRadius(100);
   CShape *pcs = &c;
   CShape &rcs = c;
-  cout << pcs->getArea() << endl; // 會執行父類別中定義的getArea()，而非子類別定義的getArea()。
-  cout << rcs.getGirth() << endl; // 會執行父類別中定義的getGirth()，而非子類別定義的getGirth()。
+  // cout << pcs->getArea() << endl; // 會執行父類別中定義的getArea()，而非子類別定義的getArea()。
+  // cout << rcs.getGirth() << endl; // 會執行父類別中定義的getGirth()，而非子類別定義的getGirth()。
+  pcs->showInfo();
+  rcs.showInfo();
   CRectangle r;
   r.setValues(123, 456);
   pcs = &r;
-  cout << pcs->getArea() << endl;
-
-  
+  // cout << pcs->getArea() << endl;
+  pcs->showInfo();
 
   return 0;
 }

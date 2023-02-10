@@ -22,6 +22,8 @@ class CRectangle: public CShape {
       setGirth((length+width)*2);
     }
 
+    virtual void showInfo() override;
+
 };
 
 #endif
