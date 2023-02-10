@@ -28,4 +28,8 @@
 * 宣告虛擬函式必須搭配destructor，即virtual ~ClassName() {}。
 * Override父類別宣告的虛擬函式:再次宣告與定義父類別中宣告的虛擬函式。
 
+指標指向父類別，將指標轉型後才能取用子類別的函式。
+* dynamic_cast<type*>(pointer)，失敗時其值為0。
+* dynamic_cast<type&>(reference)
+
 ## 純虛函式(Pure Virtual Function)
