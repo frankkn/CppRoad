@@ -31,3 +31,13 @@
 指標指向父類別，將指標轉型後才能取用子類別的函式。
 * dynamic_cast<type*>(pointer)，失敗時其值為0。
 * dynamic_cast<type&>(reference)
+
+## 純虛擬函式(Pure Virtual Function)
+
+類別中若宣告或繼承了一個或多個純虛擬函式，此類別即為抽象類別(abstract class)。
+純虛擬函式是用來強迫子類別override的一個機制。
+
+* virtual type name (parameter list) = 0;
+* 不可建立物件。
+* 可以作為實作多型的型別。
+* 父類別有虛擬函式，子類別一定要override。

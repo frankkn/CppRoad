@@ -12,7 +12,7 @@ class CShape{
     double getArea() const;
     double getGirth() const;
     
-    virtual void showInfo();
+    virtual void showInfo() = 0;
   protected:
     void setArea(double area);
     void setGirth(double girth);

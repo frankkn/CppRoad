@@ -11,11 +11,6 @@ CShape::~CShape() {
 
 }
 
-void CShape::showInfo() {
-  cout << "CShape's area : " << getArea() << endl;
-  cout << "CShape's girth : " << getGirth() << endl;
-}
-
 double CShape::getArea() const {
   return area;
 }
