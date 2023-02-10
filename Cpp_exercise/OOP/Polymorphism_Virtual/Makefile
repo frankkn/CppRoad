@@ -1,7 +1,7 @@
 CC = g++
 OPT = -O3
 LIBS = -std=c++17
-UDLIBS = CShape.cpp CCircle.cpp
+UDLIBS = CShape.cpp CCircle.cpp CRectangle.cpp
 
 all: main
 

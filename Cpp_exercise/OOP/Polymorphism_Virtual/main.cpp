@@ -1,7 +1,12 @@
 #include <iostream>
 #include "CShape.h"
 #include "CCircle.h"
+#include "CRectangle.h"
 using namespace std;
+
+void showArea(CShape *pcs){
+  cout << "The area is: " << pcs->getArea() << endl;
+}
 
 int main() {
   
@@ -21,12 +26,34 @@ int main() {
   cout << cs.getArea() << endl;
   */
 
+  /*
   CCircle c;
   c.setRadius(100);
   CShape *pcs = &c;
   cout << pcs->getArea() << endl;
   CShape &rcs = c;
   cout << rcs.getArea() << endl;
+  CRectangle cr;
+  cr.setValues(10, 8);
+  cout << cr.getArea() << endl;
+
+  CShape *array[5];
+  array[0] = &c;
+  array[1] = &cr;
+  array[2] = new CCircle();
+  array[3] = new CRectangle();
+  cout << array[0]->getArea() << endl;
+  cout << array[1]->getArea() << endl;
+  cout << array[2]->getArea() << endl;
+  cout << array[3]->getArea() << endl;
+  */
+
+  CCircle cc;
+  cc.setRadius(123);
+  CRectangle cr;
+  cr.setValues(12, 3);
+  showArea(&cc);
+  showArea(&cr);
 
   return 0;
 }
