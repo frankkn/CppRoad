@@ -48,12 +48,25 @@ int main() {
   cout << array[3]->getArea() << endl;
   */
 
-  CCircle cc;
-  cc.setRadius(123);
-  CRectangle cr;
-  cr.setValues(12, 3);
-  showArea(&cc);
-  showArea(&cr);
+  // CCircle cc;
+  // cc.setRadius(123);
+  // CRectangle cr;
+  // cr.setValues(12, 3);
+  // showArea(&cc);
+  // showArea(&cr);
+
+  CCircle c;
+  c.setRadius(100);
+  CShape *pcs = &c;
+  CShape &rcs = c;
+  cout << pcs->getArea() << endl; // 會執行父類別中定義的getArea()，而非子類別定義的getArea()。
+  cout << rcs.getGirth() << endl; // 會執行父類別中定義的getGirth()，而非子類別定義的getGirth()。
+  CRectangle r;
+  r.setValues(123, 456);
+  pcs = &r;
+  cout << pcs->getArea() << endl;
+
+  
 
   return 0;
 }
