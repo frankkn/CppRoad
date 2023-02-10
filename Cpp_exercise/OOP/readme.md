@@ -31,5 +31,3 @@
 指標指向父類別，將指標轉型後才能取用子類別的函式。
 * dynamic_cast<type*>(pointer)，失敗時其值為0。
 * dynamic_cast<type&>(reference)
-
-## 純虛函式(Pure Virtual Function)
