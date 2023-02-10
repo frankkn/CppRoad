@@ -18,3 +18,14 @@
 
 * is-a: 子類別 is-a 父類別。繼承了就是了。
 * has-a: 在A類別中有用B類別宣告成員變數，我們便可以說A has-a B。
+
+## 虛擬函式(Virtual Function)
+
+執行子類別override的內容，不強制子類別一定要實作(與父類別相同名稱的函式)。
+子類別不實作的話會以父類別的實作為主，子類別實作的話會以子類別的實作為主。
+
+* 在函式宣告敍述前加上關鍵字 virtual。
+* 宣告虛擬函式必須搭配destructor，即virtual ~ClassName() {}。
+* Override父類別宣告的虛擬函式:再次宣告與定義父類別中宣告的虛擬函式。
+
+## 純虛函式(Pure Virtual Function)
