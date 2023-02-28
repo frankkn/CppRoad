@@ -4,5 +4,6 @@
     "ostream": "cpp",
     "vector": "cpp",
     "string": "cpp"
-  }
+  },
+  "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools"
 }
